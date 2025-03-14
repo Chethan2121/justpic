@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JustPic - Professional image editing, video editing, and content creation services for content creators">
+    <meta name="keywords" content="image editing, video editing, content creation, retouching, color grading, thumbnails">
+    <title>JustPic - Transform Your Content</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="logo.jpg" type="image/png">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+    
+    <!-- Header -->
+    <header id="header" role="banner">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="#home" aria-label="JustPic Home">JustPic</a></h1>
+            </div>
+            <nav role="navigation" aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="theme-toggle" aria-label="Theme Toggle">
+                    <i class="fas fa-sun" aria-hidden="true"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-switch" aria-label="Switch between light and dark mode">
+                        <span class="slider round"></span>
+                    </label>
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </div>
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="animate-on-scroll">Transform Your Content with JustPic</h1>
+                <h2 class="animate-on-scroll">Where Creativity Meets Perfection!</h2>
+                <div class="cta-buttons animate-on-scroll">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#works" class="btn btn-secondary">View Our Work</a>
+                </div>
+            </div>
+            <div class="hero-overlay" aria-hidden="true"></div>
+            <video autoplay muted loop id="hero-video" aria-hidden="true">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-editing-a-video-in-a-studio-22886-large.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="animate-on-scroll">About Us</h2>
+                    <div class="underline animate-on-scroll"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text animate-on-scroll">
+                        <h3>Our Story</h3>
+                        <p>JustPic was founded with a simple mission: to help content creators transform their visual content into stunning masterpieces. With years of experience in the industry, our team of expert editors and designers understand what makes content stand out in today's competitive digital landscape.</p>
+                        <h3>Our Expertise</h3>
+                        <p>We specialize in professional image editing, video editing, and content creation services tailored to your unique style and brand. Our attention to detail and commitment to excellence ensure that every project exceeds expectations.</p>
+                    </div>
+                    <div class="about-image animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="JustPic Team working together on content creation" loading="lazy">
+                    </div>
+                </div>
+                <div class="industries">
+                    <h3 class="animate-on-scroll">Industries We Serve</h3>
+                    <div class="industry-cards">
+                        <div class="industry-card animate-on-scroll">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                            <h4>YouTubers</h4>
+                            <p>Thumbnails, video editing, and channel art that drives engagement.</p>
+                        </div>
+                        <div class="industry-card animate-on-scroll">
+                            <i class="fas fa-hashtag" aria-hidden="true"></i>
+                            <h4>Influencers</h4>
+                            <p>Polished content that enhances your personal brand.</p>
+                        </div>
+                        <div class="industry-card animate-on-scroll">
+                            <i class="fas fa-building" aria-hidden="true"></i>
+                            <h4>Businesses</h4>
+                            <p>Professional visuals that elevate your marketing materials.</p>
+                        </div>
+                        <div class="industry-card animate-on-scroll">
+                            <i class="fas fa-camera" aria-hidden="true"></i>
+                            <h4>Photographers</h4>
+                            <p>Expert retouching that brings your vision to life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="works" class="works">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="animate-on-scroll">Our Works</h2>
+                    <div class="underline animate-on-scroll"></div>
+                </div>
+                <div class="work-categories" role="tablist" aria-label="Work categories">
+                    <button class="category-btn active" data-category="all" role="tab" aria-selected="true" aria-controls="all-works">All</button>
+                    <button class="category-btn" data-category="image" role="tab" aria-selected="false" aria-controls="image-works">Image Editing</button>
+                    <button class="category-btn" data-category="video" role="tab" aria-selected="false" aria-controls="video-works">Video Editing</button>
+                    <button class="category-btn" data-category="content" role="tab" aria-selected="false" aria-controls="content-works">Content Creation</button>
+                </div>
+                <div class="work-gallery" role="tabpanel" id="all-works">
+                    <div class="work-item image animate-on-scroll">
+                        <div class="comparison-slider" aria-label="Before and after comparison of portrait retouching">
+                            <img class="before-image" src="https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Portrait before retouching" loading="lazy">
+                            <img class="after-image" src="https://images.unsplash.com/photo-1618588507085-c79565432917?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Portrait after retouching" loading="lazy">
+                            <div class="slider-handle" tabindex="0" aria-label="Drag to compare before and after images"></div>
+                        </div>
+                        <h4>Portrait Retouching</h4>
+                    </div>
+                    <div class="work-item video animate-on-scroll">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Video editing example thumbnail" loading="lazy">
+                            <button class="play-button" aria-label="Play video">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <h4>Cinematic Color Grading</h4>
+                    </div>
+                    <div class="work-item content animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Social media content package example" loading="lazy">
+                        <h4>Social Media Package</h4>
+                    </div>
+                    <div class="work-item image animate-on-scroll">
+                        <div class="comparison-slider" aria-label="Before and after comparison of landscape enhancement">
+                            <img class="before-image" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Landscape before enhancement" loading="lazy">
+                            <img class="after-image" src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Landscape after enhancement" loading="lazy">
+                            <div class="slider-handle" tabindex="0" aria-label="Drag to compare before and after images"></div>
+                        </div>
+                        <h4>Landscape Enhancement</h4>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="animate-on-scroll">Our Services</h2>
+                    <div class="underline animate-on-scroll"></div>
+                </div>
+                <div class="service-cards">
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>Image Editing</h3>
+                        <ul>
+                            <li>Professional Retouching</li>
+                            <li>Color Correction</li>
+                            <li>Background Removal</li>
+                            <li>Photo Manipulation</li>
+                        </ul>
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Video Editing</h3>
+                        <ul>
+                            <li>Color Grading</li>
+                            <li>Transitions & Effects</li>
+                            <li>Sound Design</li>
+                            <li>Motion Graphics</li>
+                        </ul>
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Content Creation</h3>
+                        <ul>
+                            <li>Thumbnails</li>
+                            <li>Social Media Graphics</li>
+                            <li>Channel Art</li>
+                            <li>Brand Identity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="animate-on-scroll">Contact Us</h2>
+                    <div class="underline animate-on-scroll"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info animate-on-scroll">
+                        <div class="info-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <p>Email: <a href="mailto:justpicdm@gmail.com">justpicdm@gmail.com</a></p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/justpic.official?utm_source=qr&igsh=MWlkY2ZpODJ0MmZpcQ==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/watch?v=Cjp6RVrOOW0&list=RDvuT_bXzhqhY&index=9" target="_blank" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38996.69738480304!2d76.6122108!3d12.2958104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf701c2a2e83db%3A0x3d5b14c8e418b3c0!2sMysuru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2s!4v1710150000000!5m2!1sen!2s" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" title="Google Maps location of JustPic office in Mysore"></iframe>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>JustPic</h2>
+                    <p>Transform Your Content with JustPic – Where Creativity Meets Perfection!</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <nav aria-label="Footer Navigation">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#works">Works</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 JustPic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html> 
